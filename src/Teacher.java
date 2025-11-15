@@ -2,48 +2,21 @@ import java.time.LocalDate;
 
 public class Teacher {
     private int id;
-    private String lastname;
-    private String firstname;
+    private String firstName;
+    private String lastName;
     private LocalDate birthDate;
     private String email;
-    private String phoneNumber;
+    private String phone;
     private String specialty;
 
-    public Teacher(int id, String lastname, String firstname, LocalDate birthDate, String email, String phoneNumber, String specialty) {
+    public Teacher(int id, String firstName, String lastName, LocalDate birthDate,
+                   String email, String phone, String specialty) {
         this.id = id;
-        this.lastname = lastname;
-        this.firstname = firstname;
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.birthDate = birthDate;
         this.email = email;
-        this.phoneNumber = phoneNumber;
+        this.phone = phone;
         this.specialty = specialty;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public String getLastname() {
-        return lastname;
-    }
-
-    public String getFirstname() {
-        return firstname;
-    }
-
-    public LocalDate getBirthDate() {
-        return birthDate;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public String getPhoneNumber() {
-        return phoneNumber;
-    }
-
-    public String getSpecialty() {
-        return specialty;
     }
 }

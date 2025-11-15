@@ -7,31 +7,17 @@ public class Exam {
     private LocalDateTime dateTime;
     private int coefficient;
 
-    public Exam(int id, String title, Course course, LocalDateTime dateTime, int coefficient) {
+    public Exam(int id, Course course, int coefficient) {
         this.id = id;
-        this.title = title;
         this.course = course;
-        this.dateTime = dateTime;
         this.coefficient = coefficient;
+        this.title = "Unknown";
+        this.dateTime = LocalDateTime.now();
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public Course getCourse() {
-        return course;
-    }
-
-    public LocalDateTime getDateTime() {
-        return dateTime;
-    }
-
-    public int getCoefficient() {
-        return coefficient;
-    }
+    public int getId() { return id; }
+    public String getTitle() { return title; }
+    public Course getCourse() { return course; }
+    public LocalDateTime getDateTime() { return dateTime; }
+    public int getCoefficient() { return coefficient; }
 }

@@ -10,10 +10,4 @@ public class GradeHistory {
         this.reason = reason;
         this.date = date;
     }
-    public double getValue() {return value;}
-    public String getReason() {return reason;}
-    public Instant getDate() {return date;}
-
-    public void add(GradeHistory gradeHistory) {
-    }
 }

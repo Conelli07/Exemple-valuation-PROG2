@@ -19,31 +19,4 @@ public class Tutor {
         this.relationshipDescription = relationshipDescription;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public LocalDate getBirthDate() {
-        return birthDate;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public String getPhoneNumber() {
-        return phoneNumber;
-    }
-
-    public String getRelationshipDescription() {
-        return relationshipDescription;
-    }
 }
